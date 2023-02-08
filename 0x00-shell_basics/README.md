@@ -8,3 +8,4 @@
 7-movethatfile moves the file betty
 8-firstdelete do delete the file betty
 9-firstdeletion delete the directory my_first_directory
+10-back changes the working directory to the previous one
