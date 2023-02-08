@@ -14,3 +14,4 @@
 13-symbolic_link creates a symbolic link
 14-copy_html create a script that copies all the HTML files
 100-lets_move moves all files beginning with an uppercase
+101-clean_emacs deletes all files in the current directory that end with ~
