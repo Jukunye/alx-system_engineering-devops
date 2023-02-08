@@ -17,3 +17,4 @@
 101-clean_emacs deletes all files in the current directory that end with ~
 102-tree creats the directories
 103-commas list all the files and directories separated by commas
+created a magic file
