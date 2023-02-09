@@ -13,3 +13,4 @@
 12-directories_permissions script creates a directory with set permissions
 13-change_group script changes group owner
 100-change_owner_and_group script changes owner to vincent and group owner to staff
+101-symbolic_link_permissions script changes the owner and the group owner of _hello to vincent and staff respectively
