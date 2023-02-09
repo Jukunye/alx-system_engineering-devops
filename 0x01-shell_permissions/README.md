@@ -6,3 +6,4 @@
 5-execute adds execute permission
 6-multiple_permission add execute permissions
 7-everybody script adds execution permission
+8-James_Bond script ser permissions
