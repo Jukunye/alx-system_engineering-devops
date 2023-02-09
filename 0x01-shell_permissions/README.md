@@ -10,3 +10,4 @@
 9-John_Doe script sets the mod of the file hello
 10-mirror_permission sets mode the same as
 11-directories_permissions adds execute permission
+12-directories_permissions script creates a directory with set permissions
