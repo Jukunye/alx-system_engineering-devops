@@ -5,3 +5,4 @@
 4-empty script creates an empty file hello
 5-execute adds execute permission
 6-multiple_permission add execute permissions
+7-everybody script adds execution permission
