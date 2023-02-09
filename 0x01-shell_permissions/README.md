@@ -9,3 +9,4 @@
 8-James_Bond script ser permissions
 9-John_Doe script sets the mod of the file hello
 10-mirror_permission sets mode the same as
+11-directories_permissions adds execute permission
