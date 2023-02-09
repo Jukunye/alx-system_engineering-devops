@@ -3,3 +3,4 @@
 2-groups script prints all the groups the current user is part of
 3-new_owner script changes the owner of the file
 4-empty script creates an empty file hello
+5-execute adds execute permission
