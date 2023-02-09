@@ -7,3 +7,4 @@
 6-multiple_permission add execute permissions
 7-everybody script adds execution permission
 8-James_Bond script ser permissions
+9-John_Doe script sets the mod of the file hello
