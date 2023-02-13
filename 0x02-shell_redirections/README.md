@@ -17,3 +17,4 @@
 16-whatsnext display root and 3 lines after
 17-hidethisword display all lines in the file
 18-letteronly display lines starting with the letter
+19-AZ replace characters
