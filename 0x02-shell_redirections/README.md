@@ -19,3 +19,4 @@
 18-letteronly display lines starting with the letter
 19-AZ replace characters
 20-hiago remove letters
+21-reverse input
