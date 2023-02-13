@@ -22,3 +22,4 @@
 21-reverse input
 22-users_and_homes display all users and home
 100-empty_casks findsall empty files and directories in the current directory and all sub-directories
+101-gifs
