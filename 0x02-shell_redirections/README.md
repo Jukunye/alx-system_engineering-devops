@@ -7,3 +7,5 @@
 6-third_line display third line
 7-file creates a file with text
 8-cwd_state writes the results of ls -la to another file
+9-duplicate_last_line duplicates the last line
+10-no_more_js deletes all regular files with a .js extension
