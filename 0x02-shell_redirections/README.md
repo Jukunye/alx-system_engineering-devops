@@ -16,3 +16,4 @@
 15-counthatword displays number of lines
 16-whatsnext display root and 3 lines after
 17-hidethisword display all lines in the file
+18-letteronly display lines starting with the letter
