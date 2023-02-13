@@ -14,3 +14,4 @@
 13-unique takes a list of words as input and prints only words that appear exactly once
 14-findthatword display line containing root
 15-counthatword displays number of lines
+16-whatsnext display root and 3 lines after
