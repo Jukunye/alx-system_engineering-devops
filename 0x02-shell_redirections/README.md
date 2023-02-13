@@ -9,3 +9,4 @@
 8-cwd_state writes the results of ls -la to another file
 9-duplicate_last_line duplicates the last line
 10-no_more_js deletes all regular files with a .js extension
+11-directories counts the number of directories and sub-directories
