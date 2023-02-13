@@ -20,3 +20,4 @@
 19-AZ replace characters
 20-hiago remove letters
 21-reverse input
+22-users_and_homes display all users and home
