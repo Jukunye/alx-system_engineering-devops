@@ -15,3 +15,4 @@
 14-findthatword display line containing root
 15-counthatword displays number of lines
 16-whatsnext display root and 3 lines after
+17-hidethisword display all lines in the file
