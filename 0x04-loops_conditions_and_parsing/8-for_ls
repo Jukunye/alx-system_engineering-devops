@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+# Display the contents of the current directory names after the first dash
+
+for f in *; do
+	echo "$f" | cut -d '-' -f 2
+done
