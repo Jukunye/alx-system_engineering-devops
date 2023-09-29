@@ -1,0 +1,18 @@
+#!/usr/bin/env bash
+# Create PID file, loop indefinitely, handle signals
+
+handle() {
+    rm /var/run/myscript.pid
+    exit
+}
+
+echo "$$" > /var/run/myscript.pid
+
+trap 'handle' QUIT
+trap 'echo "Y U no love me?!"' INT
+trap 'echo "I hate the kill command" && handle' TERM
+
+while :; do
+	echo "To infinity and beyond"
+	sleep 2
+done
