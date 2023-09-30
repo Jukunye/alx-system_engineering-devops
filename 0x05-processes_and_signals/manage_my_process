@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+# Indefinitely writes 'I am alive!'
+
+while :; do
+	sudo bash -c 'echo "I am alive!" >> /tmp/my_process'
+	sleep 2
+done
