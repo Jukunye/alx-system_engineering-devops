@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# Displays all acive IPv4 addresses.
+
+ifconfig | grep -oP 'inet \K[\d.]+'
