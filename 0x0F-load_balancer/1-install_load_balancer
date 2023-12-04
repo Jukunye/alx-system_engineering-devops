@@ -1,0 +1,20 @@
+#!/usr/bin/env bash
+# Install and configure HAproxy.
+apt-get update
+apt-get -y install haproxy
+
+
+#Update HAproxy confirguration file to manage load using roundrobin algorithm
+echo '
+frontend serve_in
+        bind 0:80
+        default_backend server_back
+
+backend server_back
+        balance roundrobin
+        server 261781-web-01 100.25.191.187
+        server 261781-web-02 54.198.64.165
+' >> /etc/haproxy/haproxy.cfg
+
+# Restarting HAproxy service
+service haproxy restart
