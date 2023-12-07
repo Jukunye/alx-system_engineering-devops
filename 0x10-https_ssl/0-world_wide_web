@@ -1,0 +1,18 @@
+#!/usr/bin/env bash
+# Display information about subdomains.
+
+print_info () {
+    line=$(dig "$1" | awk '/^'"$1"'/ {print $0}')
+    echo "$2 $line" | awk '{ print "The subdomain " $1 " is a " $5 " record and points to " $6}'
+}
+
+
+if [ "$#" -eq 2 ]
+then
+    print_info "$2.$1" "$2"
+else
+    print_info "www.$1" "www"
+    print_info "lb-01.$1" "lb-01"
+    print_info "web-01.$1" "web-01"
+    print_info "web-02.$1" "web-02"
+fi
