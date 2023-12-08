@@ -41,5 +41,5 @@ frontend http_in
 
 backend web_servers
         balance roundrobin
-        server 261781-web-01 100.25.191.187
-        server 261781-web-02 54.198.64.165
+        server 261781-web-01 100.25.191.187:80 check
+        server 261781-web-02 54.198.64.165:80 check
