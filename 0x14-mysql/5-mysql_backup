@@ -2,5 +2,5 @@
 # script that generates a MySQL dump and creates a compressed archive out of it.
 
 current_date=$(date +'%d-%m-%Y')
-sudo mysqldump -u root -p "$1" --all-databases > backup.sql
-sudo tar -czvf "${current_date}.tar.gz" backup.sql
+mysqldump -u root -p "$1" --all-databases > backup.sql
+tar -czvf "${current_date}.tar.gz" backup.sql
