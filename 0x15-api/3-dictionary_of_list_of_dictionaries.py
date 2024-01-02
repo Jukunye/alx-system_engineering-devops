@@ -28,7 +28,7 @@ def get_employee_dict(user_id):
 
 if __name__ == "__main__":
     """not to be executed when imported"""
-    data = {str(i): get_employee_dict(i) for i in range(1, 10)}
+    data = {str(i): get_employee_dict(i) for i in range(1, 11)}
 
     with open("todo_all_employees.json", "w") as json_file:
         json.dump(data, json_file)
