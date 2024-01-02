@@ -18,7 +18,6 @@ if __name__ == "__main__":
         argv[1])
 
     todos = requests.get(url2).json()
-         
 
     with open(argv[1] + ".csv", 'w', newline='') as file:
         writer = csv.writer(file, quoting=csv.QUOTE_ALL)
