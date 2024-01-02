@@ -17,14 +17,11 @@ if __name__ == "__main__":
     url2 = "https://jsonplaceholder.typicode.com/users/{}/todos".format(
         argv[1])
 
-    todos_response = requests.get(url2)
-    todos = todos_response.json()
+    todos = requests.get(url2).json()
+         
 
-    data = [[(argv[1]), name, task["completed"], task["title"]]
+    with open(argv[1] + ".csv", 'w', newline='') as file:
+        writer = csv.writer(file, quoting=csv.QUOTE_ALL)
+        [writer.writerow(
+            [argv[1], name, str(task["completed"]), task["title"]])
             for task in todos]
-
-    file_name = "{}.csv".format(argv[1])
-
-    with open(file_name, 'w', newline='') as file:
-        writer = csv.writer(file)
-        writer.writerows(data)
