@@ -3,8 +3,8 @@
 Script that using a REST API, for a given employee ID,
 returns information about his/her todo list progress.
 """
-from sys import argv
 import requests
+from sys import argv
 
 
 if __name__ == "__main__":
@@ -16,13 +16,13 @@ if __name__ == "__main__":
 
     url2 = "https://jsonplaceholder.typicode.com/users/{}/todos".format(
         argv[1])
-    
+
     todos_response = requests.get(url2)
     todos = todos_response.json()
     todos_total = len(todos)
     completed = sum(task["completed"] for task in todos)
 
-    employee = "Employee {} is done with tasks({}/{})".format(
+    employee = "Employee {} is done with tasks({}/{}):".format(
         name, completed, todos_total
     )
     print(employee)
