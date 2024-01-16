@@ -20,15 +20,16 @@ def recurse(subreddit, hot_list=[], params=None):
                             params=params,
                             allow_redirects=False)
 
-    data = response.json().get("data")
-    data_list = data.get("children")
-    for hot in data_list:
-        hot_list.append(hot.get("data").get("title"))
+    if response.status_code == 200:
+        data = response.json().get("data")
+        data_list = data.get("children")
+        for hot in data_list:
+            hot_list.append(hot.get("data").get("title"))
 
-    after = data.get("after")
+        after = data.get("after")
 
-    if after:
-        params = {"after": after}
-        recurse(subreddit, hot_list=hot_list, params=params)
-
-    return hot_list
+        if after:
+            params = {"after": after, "limit": 100}
+            recurse(subreddit, hot_list=hot_list, params=params)
+        return hot_list
+    return None
