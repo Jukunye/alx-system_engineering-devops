@@ -14,7 +14,7 @@ def number_of_subscribers(subreddit):
     # Setting up a custom User-Agent to avoid too many Request errors
     headers = {'User-Agent': 'Google Chrome Version 120.0.6099.217'}
 
-    response = requests.get(url, headers=headers)
+    response = requests.get(url, headers=headers, allow_redirects=False)
 
     if response.status_code == 200:
         data = response.json()["data"]["subscribers"]
