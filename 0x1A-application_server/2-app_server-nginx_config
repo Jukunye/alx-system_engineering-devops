@@ -1,0 +1,27 @@
+server {
+        listen 80;
+        listen [::]:80 default_server;
+        add_header X-Served-By 261781-web-01;
+        root   /var/www/html;
+        index  index.html index.htm index.nginx-debian.html;
+
+        location /hbnb_static {
+                alias /data/web_static/current;
+                index index.html index.htm;
+        }
+
+        location /airbnb-onepage {
+                proxy_pass http://0.0.0.0:5000;
+        }
+
+        location /redirect_me {
+                return 301 https://www.github.com/Jukunye/;
+        }
+
+        error_page 404 /404.html;
+        location /404 {
+                root /etc/nginx/html;
+                internal;
+        }
+
+}
